@@ -7,9 +7,13 @@ const homePage = document.querySelector(".where-you-tune");
 
 
 
+
+
+
+// Load the tuning that was clicked on
 $(document).ready(function(){
     // Changing the pages
-    $('a').click(function(e){
+    $('.tuning-selection').click(function(e){
         e.preventDefault(); //preventing default browser behavior = not redirecting to the href
         console.log($(this).attr('href'));
         $('.where-you-tune').empty().load($(this).attr('href')).hide().fadeIn('slow');
@@ -22,7 +26,7 @@ $(document).ready(function(){
 
 
 //Perform the function of getting the audio and playing it
-function displayTuning() {
+function playNote() {
    console.log(this);
 
 }
@@ -32,21 +36,14 @@ function displayTuning() {
 
 
 // Hook Up Event Listeners
-/* setTuning = setInterval(function() {
-        const currentTuning = document.querySelectorAll(".tunings");
-console.log(currentTuning);
-clearInterval(setTuning);
-
-}, 100);
-*/
 
 function findCurrentTuning()
 {
         if($('.tunings').is(':visible')) { //if the class is visible on the page
-
+            // selecting all elements with the class "tunings"
     const currentTuning = document.querySelectorAll(".tunings");
-    //adding event listeners to the nodeList
-    Array.from(currentTuning).forEach(element => element.addEventListener('click', displayTuning ));
+    // adding event listeners to the nodeList
+    Array.from(currentTuning).forEach(element => element.addEventListener('click', playNote ));
     console.log(currentTuning);
 
 } else {
@@ -54,18 +51,5 @@ function findCurrentTuning()
 
 }
 
-
-
-
-
-
-
-
-
-
 }
 
-
-
-
-// currentTuning.id.addEventListener('click', displayTuning );
