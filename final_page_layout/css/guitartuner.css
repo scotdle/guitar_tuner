@@ -1,0 +1,55 @@
+html,
+body {
+    height: 100%;
+}
+
+
+.navbar{
+
+    font-family: 'Hammersmith One', sans-serif;
+    color: white;
+    border-bottom: solid black 2px;
+
+}
+
+.button {
+
+    color: black;
+}
+
+.logo{
+    height:30px;
+
+}
+
+.container{
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.where-you-tune{
+    font-size: 100px;
+
+
+
+}
+
+.tunings {
+  font-family: 'Hammersmith One';
+  font-size:  15.2vw;
+    letter-spacing: 50px;
+
+
+
+
+}
+
+.h1, h1 {
+    font-size: inherit;
+    text-align: center;
+}
+
