@@ -1,1 +1,3 @@
 # guitar_tuner
+
+A guitar tuner still in the making....
