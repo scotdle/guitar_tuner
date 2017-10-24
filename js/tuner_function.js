@@ -3,8 +3,6 @@
 // 10/21/17
 
 //Declare Variables
-const homePage = document.querySelector(".where-you-tune");
-
 
 
 
@@ -27,9 +25,28 @@ $(document).ready(function(){
 
 //Perform the function of getting the audio and playing it
 function playNote() {
-   console.log(this);
+    const getNote = this.querySelector('h1').id;
+    const stringConversion = JSON.stringify(getNote).replace(/^"(.*)"$/, '$1');
+
+    console.log(stringConversion);
+
+
+    const audio = new Audio('../sound_files/' + stringConversion + '.aif');
+    console.log(audio);
+
+    if (audio.paused) {
+        audio.play();
+        console.log(audio);
+
+
+    }else{
+        audio.pause();
+        audio.currentTime = 0
+
+    }
 
 }
+
 
 
 
