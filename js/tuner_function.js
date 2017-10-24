@@ -31,9 +31,9 @@ function playNote() {
     console.log(stringConversion);
 
 
-    const audio = new Audio('../sound_files/' + stringConversion + '.aif');
+    const audio = new Audio('sound_files/' + stringConversion + '.mp3');
     console.log(audio);
-
+audio.loop = true;
     if (audio.paused) {
         audio.play();
         console.log(audio);
