@@ -4,6 +4,7 @@
 
 //Declare Variables
 
+const whereYouTune = document.querySelector('.where-you-tune');
 
 
 
@@ -28,15 +29,37 @@ function playNote() {
     const getNote = this.querySelector('h1').id;
     const stringConversion = JSON.stringify(getNote).replace(/^"(.*)"$/, '$1');
 
-    console.log(stringConversion);
+
+    const audio = document.createElement('audio');
+    audio.src = ('sound_files/' + stringConversion + '.mp3');
+whereYouTune.appendChild(audio);
+
+    audio.play();
+    audio.loop = true;
 
 
-    const audio = new Audio('sound_files/' + stringConversion + '.mp3');
-    console.log(audio);
-audio.loop = true;
+    document.addEventListener('play', function (e) {
+
+    const whatsPlaying = document.getElementsByTagName('audio');
+
+   for( i = 0; i < whatsPlaying.length; i++) {
+
+      if (whatsPlaying[i] != e.target) {
+
+whatsPlaying[i].pause();
+      }
+
+   }
+
+}, true);
+
+
+/*
+   audio.loop = true;
     if (audio.paused) {
+        audio.loop = true;
         audio.play();
-        console.log(audio);
+
 
 
     }else{
@@ -45,9 +68,16 @@ audio.loop = true;
 
     }
 
+*/
+
+
 }
 
+function oneAudioPlaying () {
 
+ conso
+
+}
 
 
 
@@ -63,10 +93,14 @@ function findCurrentTuning()
     Array.from(currentTuning).forEach(element => element.addEventListener('click', playNote ));
     console.log(currentTuning);
 
+
+
+
 } else {
     setTimeout(findCurrentTuning, 50); //wait 50 ms, then try again
 
 }
 
 }
+
 

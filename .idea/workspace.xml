@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2144de93-1031-4e1c-9f2b-8f1dd881001f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sound_files/a_guitar.aif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sound_files/b_guitar.aif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sound_files/d_guitar.aif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sound_files/drop_d_guitar.aif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sound_files/g_guitar.aif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sound_files/high_e_guitar.aif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sound_files/low_e_guitar.aif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sound_files/mandolin_a.aif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sound_files/mandolin_d.aif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sound_files/mandolin_e.aif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sound_files/mandolin_g.aif" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/tuner_function.js" afterPath="$PROJECT_DIR$/js/tuner_function.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tunings/guitar_drop_d.html" afterPath="$PROJECT_DIR$/tunings/guitar_drop_d.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +16,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-574">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -78,8 +66,8 @@
       <file leaf-file-name="tuner_function.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/tuner_function.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+            <state relative-caret-position="355">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -184,12 +172,12 @@
       <updated>1508361257605</updated>
       <workItem from="1508361258809" duration="4681000" />
       <workItem from="1508367600820" duration="12617000" />
-      <workItem from="1508810517989" duration="1172000" />
+      <workItem from="1508810517989" duration="9109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18470000" />
+    <option name="totallyTimeSpent" value="26407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -239,14 +227,6 @@
     <entry file="file://$PROJECT_DIR$/final_page_layout/tunings/bass_standard.html" />
     <entry file="file://$PROJECT_DIR$/final_page_layout/index.html" />
     <entry file="file://$PROJECT_DIR$/final_page_layout/css/guitartuner.css" />
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tunings/guitar_standard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -279,10 +259,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-574">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/tuner_function.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        <state relative-caret-position="355">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
