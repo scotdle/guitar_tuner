@@ -18,6 +18,12 @@ body {
 
 }
 
+
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+  text-align: right;
+}
 .button {
 
     color: black;
@@ -72,6 +78,24 @@ body {
 font-size: inherit;
   text-align: center;
 
+}
+
+
+.stop_button_area {
+visibility: hidden;
+background-color: red;
+text-align: center;
+width: 50%;
+  height:40px;
+  margin: 0 auto;
+  border: solid black 1px;
+
+    #stop_button {
+
+      position:relative;
+      top:10%;
+
+    }
 }
 
 @media screen and (max-width: $break-mobile-menu) {
