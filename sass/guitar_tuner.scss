@@ -76,9 +76,16 @@ body {
 
 
     }
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 
+}
 
-
+.tunings:hover {
+  background-color: white;
+}
+.tunings:focus{
+ background-color: red;
 
 }
 
@@ -90,6 +97,8 @@ body {
       .link {
    padding: 40px;
    color: lightslategrey;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
 
 
  }
@@ -103,7 +112,9 @@ padding: 40px;
 
 
 }
-
+.link:hover {
+  color: $scooters_Color;
+}
 
 .h1, h1 {
 
@@ -117,30 +128,38 @@ font-size: inherit;
 visibility: hidden;
 background-color: red;
 text-align: center;
-<<<<<<< HEAD
 width: 100%;
   height:60px;
   margin: 0 auto;
-  border: solid black 1px;
+  border: solid black 2px;
   padding:0;
-=======
-width: 50%;
-  height:40px;
-  margin: 0 auto;
-  border: solid black 1px;
->>>>>>> 36f737c02a96f2738b02d7da0c2d3f55292dc69e
+  
+
 
     #stop_button {
 
       position:relative;
-<<<<<<< HEAD
-      top: 25%;
-=======
-      top:10%;
->>>>>>> 36f737c02a96f2738b02d7da0c2d3f55292dc69e
+
+
+      top:25%;
+
 
     }
 }
+
+.stop_button_area:hover {
+
+  background-color: white;
+  border: solid red 3px;
+
+  #stop_button{
+    color: red;
+
+  }
+
+}
+
+
 
 @media screen and (max-width: $break-mobile-menu) {
 

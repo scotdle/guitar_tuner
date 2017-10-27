@@ -7,7 +7,7 @@
 const whereYouTune = document.querySelector('.where-you-tune');
 const stopButtonArea = document.querySelector('.stop_button_area');
 const audio = document.createElement('audio');
-stopButton = document.createElement("icon");
+const stopButton = document.createElement("icon");
 
 
 
@@ -73,13 +73,16 @@ function findCurrentTuning()
             stopButton.id = "stop_button";
             stopButtonArea.appendChild(stopButton);
             stopButtonArea.style.visibility = "visible";
-            stopButtonArea.addEventListener('click', stopNote )
-
+            stopButtonArea.addEventListener('click', stopNote);
+            stopButtonArea.style.webkitTransitionDurationDuration = "0.3s";
+            stopButtonArea.style.transitionDuration= "0.3s";
 
 
 } else {
     setTimeout(findCurrentTuning, 50); //wait 50 ms, then try again
             stopButtonArea.style.visibility = "hidden";
+            stopButtonArea.style.webkitTransitionDurationDuration = "0.0s";
+            stopButtonArea.style.transitionDuration= "0.0s";
 
 }
 
