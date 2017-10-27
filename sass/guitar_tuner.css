@@ -1,88 +1,55 @@
-html,
-body {
-  height: 100%; }
+/*
+Error: Invalid CSS after "width: 100%": expected "{", was ";"
+        on line 121 of guitar_tuner.scss
 
-.navbar {
-  font-family: 'Hammersmith One', sans-serif;
-  color: #add9f4;
-  background-color: white;
-  border-bottom: solid black 2px; }
+116: .stop_button_area {
+117: visibility: hidden;
+118: background-color: red;
+119: text-align: center;
+120: <<<<<<< HEAD
+121: width: 100%;
+122:   height:60px;
+123:   margin: 0 auto;
+124:   border: solid black 1px;
+125:   padding:0;
+126: =======
 
-.navbar-nav .nav-link {
-  padding-right: 0;
-  padding-left: 0;
-  text-align: right; }
-
-.button {
-  color: black; }
-
-.logo {
-  height: 30px; }
-
-.container {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.row {
-  margin-left: 0;
-  margin-right: 0; }
-
-.where-you-tune {
-  font-size: 10vw; }
-
-.tunings {
-  font-family: 'Hammersmith One', sans-serif;
-  font-size: 14vw;
-  background-color: rgba(173, 217, 244, 0.7);
-  border: solid 1px black; }
-  @media screen and (max-width: 576px) {
-    .tunings {
-      height: 100%; }
-      .tunings h1 {
-        font-size: 20vw;
-        letter-spacing: 0px; } }
-
-.about_page {
-  font-size: 20px;
-  margin-top: 40px; }
-  .about_page .link {
-    padding: 40px;
-    color: lightslategrey; }
-  .about_page .profilepic {
-    padding: 40px; }
-
-.h1, h1 {
-  font-size: inherit;
-  text-align: center; }
-
-.stop_button_area {
-  visibility: hidden;
-  background-color: red;
-  text-align: center;
-  width: 100%;
-  height: 60px;
-  margin: 0 auto;
-  border: solid black 1px;
-  padding: 0; }
-  .stop_button_area #stop_button {
-    position: relative;
-    top: 25%; }
-
-@media screen and (max-width: 991px) {
-  .btn-secondary, .dropdown-menu.show {
-    float: right;
-    left: 50%;
-    top: 40px; }
-
-  .dropdown-menu.show {
-    position: absolute; } }
-@media screen and (max-width: 576px) {
-  .about_page {
-    margin-top: 340px; }
-    .about_page .link {
-      padding: 14px;
-      color: lightslategrey; } }
-
-/*# sourceMappingURL=guitar_tuner.css.map */
+Backtrace:
+guitar_tuner.scss:121
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"width: 100%\": expected \"{\", was \";\"\A         on line 121 of guitar_tuner.scss\A \A 116: .stop_button_area {\A 117: visibility: hidden;\A 118: background-color: red;\A 119: text-align: center;\A 120: <<<<<<< HEAD\A 121: width: 100%;\A 122:   height:60px;\A 123:   margin: 0 auto;\A 124:   border: solid black 1px;\A 125:   padding:0;\A 126: ======="; }
