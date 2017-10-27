@@ -5,6 +5,10 @@
 //Declare Variables
 
 const whereYouTune = document.querySelector('.where-you-tune');
+const stopButtonArea = document.querySelector('.stop_button_area');
+const audio = document.createElement('audio');
+stopButton = document.createElement("icon");
+
 
 
 
@@ -29,8 +33,6 @@ function playNote() {
     const getNote = this.querySelector('h1').id;
     const stringConversion = JSON.stringify(getNote).replace(/^"(.*)"$/, '$1');
 
-
-    const audio = document.createElement('audio');
     audio.src = ('sound_files/' + stringConversion + '.mp3');
 whereYouTune.appendChild(audio);
 
@@ -38,46 +40,19 @@ whereYouTune.appendChild(audio);
     audio.loop = true;
 
 
-    document.addEventListener('play', function (e) {
-
-    const whatsPlaying = document.getElementsByTagName('audio');
-
-   for( i = 0; i < whatsPlaying.length; i++) {
-
-      if (whatsPlaying[i] != e.target) {
-
-whatsPlaying[i].pause();
-      }
-
-   }
-
-}, true);
-
-
-/*
-   audio.loop = true;
-    if (audio.paused) {
-        audio.loop = true;
-        audio.play();
-
-
-
-    }else{
-        audio.pause();
-        audio.currentTime = 0
-
-    }
-
-*/
 
 
 }
 
-function oneAudioPlaying () {
 
- conso
+function stopNote() {
+
+  audio.pause();
 
 }
+
+
+
 
 
 
@@ -91,13 +66,20 @@ function findCurrentTuning()
     const currentTuning = document.querySelectorAll(".tunings");
     // adding event listeners to the nodeList
     Array.from(currentTuning).forEach(element => element.addEventListener('click', playNote ));
-    console.log(currentTuning);
 
+            //adding in the stop button
+
+            stopButton.className = "fa fa-stop-circle fa-2x";
+            stopButton.id = "stop_button";
+            stopButtonArea.appendChild(stopButton);
+            stopButtonArea.style.visibility = "visible";
+            stopButtonArea.addEventListener('click', stopNote )
 
 
 
 } else {
     setTimeout(findCurrentTuning, 50); //wait 50 ms, then try again
+            stopButtonArea.style.visibility = "hidden";
 
 }
 

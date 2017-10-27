@@ -14,10 +14,17 @@ body {
 
     font-family: 'Hammersmith One', sans-serif;
     color: $scooters_Color;
+    background-color: white;
     border-bottom: solid black 2px;
 
 }
 
+
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+  text-align: right;
+}
 .button {
 
     color: black;
@@ -37,6 +44,13 @@ body {
 
 }
 
+.row {
+ margin-left: 0;
+ margin-right: 0;
+
+
+}
+
 .where-you-tune {
     font-size: 10vw;
 
@@ -44,7 +58,7 @@ body {
 
 .tunings {
   font-family: 'Hammersmith One', sans-serif;
-  font-size:  17vw;
+  font-size:  14vw;
     background-color: rgba( $scooters_Color, .7 );
     border: solid 1px black;
     @media screen and (max-width: $break-medium) {
@@ -53,7 +67,7 @@ body {
 
         h1 {
 
-            font-size:  25vw;
+            font-size:  20vw;
             letter-spacing: 0px;
 
 
@@ -67,11 +81,54 @@ body {
 
 
 }
+
+.about_page {
+
+ font-size: 20px;
+  margin-top:40px;
+
+      .link {
+   padding: 40px;
+   color: lightslategrey;
+
+
+ }
+
+  .profilepic {
+
+padding: 40px;
+
+
+  }
+
+
+}
+
+
 .h1, h1 {
 
 font-size: inherit;
   text-align: center;
 
+}
+
+
+.stop_button_area {
+visibility: hidden;
+background-color: red;
+text-align: center;
+width: 100%;
+  height:60px;
+  margin: 0 auto;
+  border: solid black 1px;
+  padding:0;
+
+    #stop_button {
+
+      position:relative;
+      top: 25%;
+
+    }
 }
 
 @media screen and (max-width: $break-mobile-menu) {
@@ -88,4 +145,21 @@ top:40px;
 
       }
 
+
+
+}
+
+@media screen and (max-width: $break-medium) {
+  .about_page{
+
+    margin-top:340px;
+
+    .link {
+      padding: 14px;
+      color: lightslategrey;
+
+
+    }
+
+  }
 }
