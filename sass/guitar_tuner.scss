@@ -1,4 +1,3 @@
-
 $scooters_Color: #add9f4;
 $break-small: 320px;
 $break-medium: 576px;
@@ -6,76 +5,70 @@ $break-mobile-menu: 991px;
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
+.navbar {
 
-.navbar{
-
-    font-family: 'Hammersmith One', sans-serif;
-    color: $scooters_Color;
-    background-color: white;
-    border-bottom: solid black 2px;
+  font-family: 'Hammersmith One', sans-serif;
+  color: $scooters_Color;
+  background-color: white;
+  border-bottom: solid black 2px;
 
 }
-
 
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
   text-align: right;
 }
+
 .button {
 
-    color: black;
+  color: black;
 }
 
-.logo{
-    height:30px;
+.logo {
+  height: 30px;
 
 }
 
-.container{
+.container {
 
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .row {
- margin-left: 0;
- margin-right: 0;
-
+  margin-left: 0;
+  margin-right: 0;
 
 }
 
 .where-you-tune {
-    font-size: 10vw;
+  font-size: 10vw;
 
 }
 
 .tunings {
   font-family: 'Hammersmith One', sans-serif;
-  font-size:  14vw;
-    background-color: rgba( $scooters_Color, .7 );
-    border: solid 1px black;
-    @media screen and (max-width: $break-medium) {
-        height:100%;
+  font-size: 14vw;
+  background-color: rgba($scooters_Color, .7);
+  border: solid 1px black;
+  @media screen and (max-width: $break-medium) {
+    height: 100%;
 
+    h1 {
 
-        h1 {
-
-            font-size:  20vw;
-            letter-spacing: 0px;
-
-
-
-        }
-
+      font-size: 20vw;
+      letter-spacing: 0px;
 
     }
+
+  }
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 
@@ -84,67 +77,61 @@ body {
 .tunings:hover {
   background-color: white;
 }
-.tunings:focus{
- background-color: red;
+
+.tunings:focus {
+  background-color: red;
 
 }
 
 .about_page {
 
- font-size: 20px;
-  margin-top:40px;
+  font-size: 20px;
+  margin-top: 40px;
 
-      .link {
-   padding: 40px;
-   color: lightslategrey;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-
-
- }
-
-  .profilepic {
-
-padding: 40px;
-
+  .link {
+    padding: 40px;
+    color: lightslategrey;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 
   }
 
+  .profilepic {
+
+    padding: 40px;
+
+  }
 
 }
+
 .link:hover {
   color: $scooters_Color;
 }
 
 .h1, h1 {
 
-font-size: inherit;
+  font-size: inherit;
   text-align: center;
 
 }
 
-
 .stop_button_area {
-visibility: hidden;
-background-color: red;
-text-align: center;
-width: 100%;
-  height:60px;
+  visibility: hidden;
+  background-color: red;
+  text-align: center;
+  width: 100%;
+  height: 60px;
   margin: 0 auto;
   border: solid black 2px;
-  padding:0;
-  
+  padding: 0;
 
+  #stop_button {
 
-    #stop_button {
+    position: relative;
 
-      position:relative;
+    top: 25%;
 
-
-      top:25%;
-
-
-    }
+  }
 }
 
 .stop_button_area:hover {
@@ -152,42 +139,36 @@ width: 100%;
   background-color: white;
   border: solid red 3px;
 
-  #stop_button{
+  #stop_button {
     color: red;
 
   }
 
 }
 
-
-
 @media screen and (max-width: $break-mobile-menu) {
 
-    .btn-secondary, .dropdown-menu.show {
-float: right;
-left:50%;
-top:40px;
-    }
+  .btn-secondary, .dropdown-menu.show {
+    float: right;
+    left: 50%;
+    top: 40px;
+  }
 
-      .dropdown-menu.show{
-        position: absolute;
+  .dropdown-menu.show {
+    position: absolute;
 
-
-      }
-
-
+  }
 
 }
 
 @media screen and (max-width: $break-medium) {
-  .about_page{
+  .about_page {
 
-    margin-top:340px;
+    margin-top: 340px;
 
     .link {
       padding: 14px;
       color: lightslategrey;
-
 
     }
 
